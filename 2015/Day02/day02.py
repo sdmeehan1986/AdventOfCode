@@ -2,8 +2,10 @@ def get_input(file_name):
     with open(file_name) as file:
         return file.readlines()
 
+
 def sides(data):
     return [int(x.rstrip()) for x in data.split("x")]
+
 
 def test():
     print("Starting test run 1")
@@ -27,6 +29,7 @@ def test():
     print(f'The total wrapping paper required is {total}')
     print(f'The total ribbon required is {ribbon}')
     print("---------------")
+
 
 def live():
     print("Starting live run 1")
